@@ -1,0 +1,61 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c1r1s1.wethinkcode.co.za
+Darwin 18.6.0 x86_64
+$> date
+Tue Jul  2 13:34:31 SAST 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190702/rengelbr
+
+= Git history ==================================================================
+$> git -C /tmp/tmplb0A0c/user log --pretty='%H - %an, %ad : %s'
+ea4ceb74a2f4472dc6d4fcf2e90971e29276c2f1 - Rigardt Engelbrecht, Tue Jul 2 13:34:08 2019 +0200 : created function that prints given paramater integer value in binary to standard output
+33a52a2f14844acca172c5eff81eb69872e63127 - Rigardt Engelbrecht, Tue Jul 2 13:15:19 2019 +0200 : created the function ft_putstr which prints string to standard output
+2e1b7572d6f05a6d21a2c80ec2709a37463aef58 - Rigardt Engelbrecht, Tue Jul 2 12:54:04 2019 +0200 : aff_a done
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmplb0A0c/user
+total 8
+-rw-r--r--  1 root  wheel  916 Jul  2 13:34 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Jul  2 13:34 aff_a
+drwxr-xr-x  3 root  wheel   96 Jul  2 13:34 ft_putstr
+drwxr-xr-x  3 root  wheel   96 Jul  2 13:34 print_bits
+
+/tmp/tmplb0A0c/user/aff_a:
+total 8
+-rw-r--r--  1 root  wheel  1174 Jul  2 13:34 aff_a.c
+
+/tmp/tmplb0A0c/user/ft_putstr:
+total 8
+-rw-r--r--  1 root  wheel  1039 Jul  2 13:34 ft_putstr.c
+
+/tmp/tmplb0A0c/user/print_bits:
+total 8
+-rw-r--r--  1 root  wheel  1127 Jul  2 13:34 print_bits.c
+ 
+= print_bits ===================================================================
+$> gcc -Wextra -Wall -Werror main.c print_bits.c -o user_exe 
+gcc: error: unable to read SDK settings for '/'
+gcc: warning: unable to determine the version of the host OS
+
+= Test 1 ===================================================
+$> ./84hdc4ecyt6ak98fwgu1h4s5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
