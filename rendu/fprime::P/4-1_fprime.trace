@@ -1,0 +1,125 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c3r8s6.wethinkcode.co.za
+Darwin 18.7.0 x86_64
+$> date
+Tue Aug  6 11:00:22 SAST 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190806/rengelbr2
+
+= Git history ==================================================================
+$> git -C /tmp/tmpESbK7k/user log --pretty='%H - %an, %ad : %s'
+59776abda62b29f419acf265d606b744ad6bced4 - Rigardt Engelbrecht, Tue Aug 6 11:00:06 2019 +0200 : takes positive int arg and displays prime factorization
+4f90cbe589bd9db84d627d264e9128bf22912ac4 - Rigardt Engelbrecht, Tue Aug 6 09:58:12 2019 +0200 : sorts a singly linked list in ascending order
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpESbK7k/user
+total 8
+-rw-r--r--  1 root  wheel  628 Aug  6 11:00 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug  6 11:00 fprime
+drwxr-xr-x  3 root  wheel   96 Aug  6 11:00 sort_list
+
+/tmp/tmpESbK7k/user/fprime:
+total 8
+-rw-r--r--  1 root  wheel  1415 Aug  6 11:00 fprime.c
+
+/tmp/tmpESbK7k/user/sort_list:
+total 8
+-rw-r--r--  1 root  wheel  1249 Aug  6 11:00 sort_list.c
+ 
+= fprime =======================================================================
+$> gcc -Wextra -Wall -Werror fprime.c -o user_exe 
+gcc: error: unable to read SDK settings for '/'
+gcc: warning: unable to determine the version of the host OS
+
+= Test 1 ===================================================
+$> ./bk6hdm75z6yaf4n6vgusj1k3 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./f08m0lnd19okql8k4izxfe7j "1" "2" "3" "4" "5" "6"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./5ybhvtsct70y9fqr1b2uq8eg 8
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./w0oqot0thttzli4pflrshj5d 194
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./y9t2knrmnzby779l3uuq3h6u 87
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./iymknak0wlk30neyo71ookph 41
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ziaezqjvrzdju0q02npkuijq 63
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./joawkiggf5m9zooui641b0bm 186
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./0lqbeujw2ktrg3teej26iji1 125
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./q8uluidc3e460em2exsp0pmk 166
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./gkkm41hanksff1eli48o2k1f 482949
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./jqn8nsabm0jnlz378nuucg9y 608069
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./78za2s4ki4s68jjvzechsst7 1826892
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./m76clk9517x5nl95rn3akmm0 1334036
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./u7filynphd0yosdrcoe7r93r 1873921
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

@@ -1,0 +1,144 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c3r2s7.wethinkcode.co.za
+Darwin 18.7.0 x86_64
+$> date
+Tue Aug  6 13:28:58 SAST 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190806/rengelbr4
+
+= Git history ==================================================================
+$> git -C /tmp/tmpjTfK95/user log --pretty='%H - %an, %ad : %s'
+2481354bf3af596f4846ad071c6d3616f743b48e - Rigardt Engelbrecht, Tue Aug 6 13:28:46 2019 +0200 : program that displays string with all words rotated left once
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpjTfK95/user
+total 8
+-rw-r--r--  1 root  wheel  330 Aug  6 13:28 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug  6 13:28 rostring
+
+/tmp/tmpjTfK95/user/rostring:
+total 8
+-rw-r--r--  1 root  wheel  1502 Aug  6 13:28 rostring.c
+ 
+= rostring =====================================================================
+$> gcc -Wextra -Wall -Werror rostring.c -o user_exe 
+gcc: error: unable to read SDK settings for '/'
+gcc: warning: unable to determine the version of the host OS
+
+= Test 1 ===================================================
+$> ./r2m7xilvbbbhltgd502sk1op 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./8dv63y27aimdn0dssz3ojt8w 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./s7xwx6kuve2gv70hjwmriw1j "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./7t786512a9mzkc9w8lv4pkjr "6sqCSNR9bgnvD"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./i8m8uvry5ciokgshbe3ctv9j "QAC"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./7w4u1z32h97ouf0r201rfgtg "anrH7Wki5Zjy"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ymz8ir9racrrxvr0x8d1hiko "UA5olgtPXY7D2 CyQPISTanXmR9M pGczW2wFbxHkqr CcgGFv J9q5m cQmo50pFk3gX wiYjWLJofGvIs82t gCfmOK IYryQ2UzC zUMD2V8OxtgjQKBGP MVo7JfDW4jsLyvKN EIvupsyO0U91VLe tiwKju9H2NSkMXs"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./k63rn6nnfozw6se1o9yhr1ga "MO7UH2cKiPtusL 18GIQu0LbVwSPZ xvtBGXRM4Uz ZqrCNgncYR4mw89Ke"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./yoq9tbyrjezfqt9a2zt6lipg "jzwSrN8HZ5v0q xsIK1Ng twnKN6BeX3RDHY 41GVzkMloh95 n7sEKtTG JYP O6LoCqaxlVNydcQD1"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./3bmvwdg6wdxkvbkmkfas6fok "85bcDVJvqpCwRaH	/sXCD8R7BHpYtfmIa8fU6r42oPZNqyYKpEA69Ji*B9rK@j7R48hepwoB3 @xz26qIG+ZMLUE89Ix1N=hqPVMTRGijdb07			1"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./ybhps6z09ca7nd7i5zal8mbm "(XVHIn		 cWpLgFCbO	 PIlmz9C8HafpckZO1;eUOViqQ463iwlItpu24"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./50hcds7qowz294d9uijobpy7 " 3VXq-jld(frFQoxK3qzUV/MAKa/ZDtSunoy2QH1dMrGI  OJihbPnUV8DF0YWO9Cg8oBt-1pVl89Oesqy 	.ELp ,FR7Ts5Q6U09yma5"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./n0yybeg0mclf62p6kkt28a59 "		7QfmIxJMOiAhG5ecnSKlIjEC/hW0iXNLBjfAq.xkYzcQD2MXqUwbJy6+H4M8Zga=NnST9Vc6wD43"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./l26c1d3oj6kt5jfcido51u0n ">SxYLDetUCA6TnQ+lCDRIyXsfhEQL7mwJ HoZbsnMlAuP (Q2a5fwSR :Y1z6Lr4tCGV0aIM;MmfTxBtU1/"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./68rbpql0frpe92g0uawex7lu ";pYUKkRw	6"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./yk5gpa2vrl1s410x5x1h7881 " =epOIqYmiQbogxtH82=j5SLAGsm8IClLaGm	3"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./2qv64vi5kgbi2pa51bikq07t "4ANJw6B7o0W5			75kSM0Qwb1JPup8RIZrYmvU1bNGTW ?sU3ENk<eWyK2"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./9za7gs83unc5mh6xj8y1rumh " sFqjMrSz:rbRDO		DnKOMe9yfjlUJZVkL 2bmp	-W8SoX01wsGDJK (5sGPTLgov2A		 L5vdg9pR<uVtlxCBikwpEAz;qoj1XY6hbVZwIf;"
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./qky358bvedtoy4emlcxnvq7o "4nDQFaKr1y:ewuYyJoEXUVz2ndKM	<fucxeFOmwIS2Tt	nz5tsmQY9r 1HXWLVYgwf6QsF73*"
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./zctj0f6ltbudbneoes7gfig9 " GPTktoDQamq86Ryfp)Kpo8fYFsMw2HxUmT	@FeWVrtIx6fy5uKUB4@"
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

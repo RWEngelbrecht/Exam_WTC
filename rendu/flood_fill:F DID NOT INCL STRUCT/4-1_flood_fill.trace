@@ -1,0 +1,98 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r5s1.wethinkcode.co.za
+Darwin 18.7.0 x86_64
+$> date
+Tue Aug  6 14:06:45 SAST 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190806/rengelbr5
+
+= Git history ==================================================================
+$> git -C /tmp/tmpxTl4g9/user log --pretty='%H - %an, %ad : %s'
+838ae8daddd174ea4aca2e9e0e4d1f12a2f39ce5 - Rigardt Engelbrecht, Tue Aug 6 14:06:19 2019 +0200 : floodfill
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpxTl4g9/user
+total 8
+-rw-r--r--  1 root  wheel  328 Aug  6 14:06 __GIT_HISTORY
+drwxr-xr-x  4 root  wheel  128 Aug  6 14:06 flood_fill
+
+/tmp/tmpxTl4g9/user/flood_fill:
+total 16
+-rw-r--r--  1 root  wheel  1627 Aug  6 14:06 flood_fill.c
+-rw-r--r--  1 root  wheel  1075 Aug  6 14:06 t_point.h
+ 
+= flood_fill ===================================================================
+$> gcc -Wextra -Wall -Werror flood_fill.c main.c -o user_exe 
+gcc: error: unable to read SDK settings for '/'
+gcc: warning: unable to determine the version of the host OS
+flood_fill.c:13:38: error: unknown type name 't_point'
+void    flood_fill2(char **tab, char c, t_point size, t_point pos)
+                                        ^
+flood_fill.c:13:52: error: unknown type name 't_point'
+void    flood_fill2(char **tab, char c, t_point size, t_point pos)
+                                                      ^
+flood_fill.c:15:2: error: use of undeclared identifier 't_point'
+        t_point point[4];
+        ^
+flood_fill.c:17:2: error: use of undeclared identifier 'point'
+        point[0].x = pos.x;
+        ^
+flood_fill.c:18:2: error: use of undeclared identifier 'point'
+        point[0].y = pos.y + 1;
+        ^
+flood_fill.c:19:2: error: use of undeclared identifier 'point'
+        point[1].x = pos.x;
+        ^
+flood_fill.c:20:2: error: use of undeclared identifier 'point'
+        point[1].y = pos.y - 1;
+        ^
+flood_fill.c:21:2: error: use of undeclared identifier 'point'
+        point[2].x = pos.x + 1;
+        ^
+flood_fill.c:22:2: error: use of undeclared identifier 'point'
+        point[2].y = pos.y;
+        ^
+flood_fill.c:23:2: error: use of undeclared identifier 'point'
+        point[3].x = pos.x - 1;
+        ^
+flood_fill.c:24:2: error: use of undeclared identifier 'point'
+        point[3].y = pos.y;
+        ^
+flood_fill.c:30:29: error: use of undeclared identifier 'point'
+                flood_fill2(tab, c, size, point[0]);
+                                          ^
+flood_fill.c:31:29: error: use of undeclared identifier 'point'
+                flood_fill2(tab, c, size, point[1]);
+                                          ^
+flood_fill.c:32:29: error: use of undeclared identifier 'point'
+                flood_fill2(tab, c, size, point[2]);
+                                          ^
+flood_fill.c:33:29: error: use of undeclared identifier 'point'
+                flood_fill2(tab, c, size, point[3]);
+                                          ^
+flood_fill.c:37:29: error: unknown type name 't_point'
+void    flood_fill(char **tab, t_point size, t_point begin)
+                               ^
+flood_fill.c:37:43: error: unknown type name 't_point'
+void    flood_fill(char **tab, t_point size, t_point begin)
+                                             ^
+17 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================
