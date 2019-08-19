@@ -1,0 +1,49 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c3r7s1.wethinkcode.co.za
+Darwin 18.7.0 x86_64
+$> date
+Mon Aug 19 09:46:11 SAST 2019
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190819/rengelbr2
+
+= Git history ==================================================================
+$> git -C /tmp/tmpa1fW0A/user log --pretty='%H - %an, %ad : %s'
+4bb738a92358cb28c09b8e748cee67794c9f57f4 - Rigardt Engelbrecht, Mon Aug 19 09:45:44 2019 +0200 : returns 1 when t_list given as argument traverses through the same node more than once
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpa1fW0A/user
+total 8
+-rw-r--r--  1 root  wheel  347 Aug 19 09:46 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug 19 09:46 cycle_detector
+
+/tmp/tmpa1fW0A/user/cycle_detector:
+total 8
+-rw-r--r--  1 root  wheel  1131 Aug 19 09:46 cycle_detector.c
+ 
+= cycle_detector ===============================================================
+$> gcc -Wextra -Wall -Werror main.c test_cycle_detector.c cycle_detector.c -o user_exe 
+gcc: error: unable to read SDK settings for '/'
+gcc: warning: unable to determine the version of the host OS
+
+= Test 1 ===================================================
+$> ./apqcu3epkyd1kyyesjt8e3id
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
