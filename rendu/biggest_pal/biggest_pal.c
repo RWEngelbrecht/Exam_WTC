@@ -1,12 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   biggest_pal.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rengelbr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/27 09:52:26 by rengelbr          #+#    #+#             */
+/*   Updated: 2019/08/27 11:33:00 by rengelbr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void print_pal(char *s, int start, int end)
+void	print_pal(char *s, int start, int len)
 {
-	while (start <= end)
-		write(1, &s[start++], 1);
+	while (start <= len)
+	{
+		write(1, &s[start], 1);
+		start++;
+	}
 }
 
-void biggest_pal(char *s)
+void	biggest_pal(char *s)
 {
 	int i;
 	int len;
@@ -19,9 +34,8 @@ void biggest_pal(char *s)
 	i = 0;
 	while (s[len])
 		len++;
-	if (len == 1)
-		write(1, &s[i], 1);
 	big_len = 1;
+	hold = 0;
 	while (++i < len)
 	{
 		start = i - 1;
@@ -47,7 +61,7 @@ void biggest_pal(char *s)
 			}
 			--start;
 			++end;
-		}
+		}	
 	}
 	print_pal(s, hold, hold + big_len - 1);
 }
@@ -59,4 +73,5 @@ int main(int ac, char **av)
 		biggest_pal(av[1]);
 	}
 	write(1, "\n", 1);
+	return (0);
 }
